@@ -1,0 +1,31 @@
+{
+   "compilerOptions": {
+     "lib": ["es2018"],
+     "rootDirs": ["tests", "src"],
+     "target": "es2018",
+     "module": "commonjs",
+     "moduleResolution": "node",
+     "outDir": "./build",
+     "skipLibCheck": true,
+     "emitDecoratorMetadata": true,
+     "experimentalDecorators": true,
+     "sourceMap": true,
+     "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "tests/*",
+            ]
+      }
+   },
+   "include": [
+     "src/**/*.ts",
+     ".env",
+     "tests/**/*.ts",
+     "index.js",
+     "config/*.config.js" // for *.config.js files
+   ],
+   "exclude": [
+     "node_modules",
+   ]
+ }
